@@ -5,8 +5,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # ========== НАСТРОЙКИ (сюда вставишь ключи) ==========
-DEEPSEEK_API_KEY = "sk-8b108ef5b0b1439fb90e2b26c8dec8dd"
-TELEGRAM_BOT_TOKEN = "8756649616:AAFzqmfCG-foeHpz-xixbVzY-dkzewvsGek"
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
 # Мой характер – описание для DeepSeek
 SYSTEM_PROMPT = (
